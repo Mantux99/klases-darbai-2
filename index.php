@@ -24,3 +24,36 @@ echo "<br>";
 $text = 'Mano vardas, tomas as esu is povilaiciu seimynos';
 $result = strtolower($text);
 print $result;
+
+echo "<br>";
+//trecia uzduotis sukurti, kad ivedus savaites dienas, rodytu ar tai savaitgalis, ar tai darbo diena ir panasiai.
+//break funkcija stabdo tikrinima, kadangi nebera prasmes toliau tikrinti , jei atsakymas atitinka norima uzklausa.
+// strtoupper 
+
+$target = 'pirmadienis';
+
+switch (strtoupper($target)) {
+    case 'PIRMADIENIS';
+    print 'Pirmadienis';
+    break;
+    case 'ANTRADIENIS';
+    print 'Antradienis';
+    break;
+    case 'TREcIADIENIS';
+    print 'Treciadienis';
+    break;
+    case 'KETVIRTADIENIS';
+    print 'Ketvirtadienis';
+    break;
+    case 'PENKTADIENIS';
+    print 'Penktadienis';
+    break;
+    case 'SESTADIENIS';
+    print 'Sestadienis';
+    break;
+    case 'SEKMADIENIS';
+    print 'Sekmadienis';
+    break;
+    default:
+    print 'Nėra tokios savaites dienos';
+}
