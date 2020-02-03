@@ -17,4 +17,10 @@ $tekstas = 'sudareme sakini is penkiu zodziu';
 $str = str_replace(' ', '.', $tekstas);
 print $str;
 
-//
+echo "<br>";
+//3. sukurti stringa kuris susidarytyu is sakinio. turim jame egzistuoti didziosios ir mazosios raides. Panaudoti php default'ine funkcija
+// kuri visas stringo raides paverstu didziosiomis arba mazosiomis
+
+$text = 'Mano vardas, tomas as esu is povilaiciu seimynos';
+$result = strtolower($text);
+print $result;
